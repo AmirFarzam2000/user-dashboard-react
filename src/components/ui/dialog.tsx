@@ -63,8 +63,7 @@ function DialogContent({
           "bottom-0 left-0 right-0 max-h-[90vh] rounded-t-2xl p-4 pb-8",
           "data-[state=open]:slide-in-from-bottom data-[state=closed]:slide-out-to-bottom",
           "sm:bottom-auto sm:left-[50%] sm:right-auto sm:top-[50%] sm:-translate-x-1/2 sm:-translate-y-1/2 sm:max-w-lg sm:rounded-2xl sm:p-6",
-          "sm:data-[state=open]:zoom-in-95 sm:data-[state=open]:fade-in-0",
-          "sm:data-[state=closed]:zoom-out-95 sm:data-[state=closed]:fade-out-0",
+          "sm:data-[state=open]:fade-in-0 sm:data-[state=closed]:fade-out-0",
           className
         )}
         {...props}
