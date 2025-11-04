@@ -155,28 +155,6 @@
   }
 }
 
-@keyframes zoomIn {
-  from {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes zoomOut {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-}
-
 @layer utilities {
   .animate-in {
     animation-duration: 0.3s;
@@ -204,14 +182,6 @@
   
   .slide-out-to-bottom {
     animation: slideOutToBottom 0.2s ease-in both;
-  }
-  
-  .zoom-in-95 {
-    animation: zoomIn 0.3s ease-out both;
-  }
-  
-  .zoom-out-95 {
-    animation: zoomOut 0.2s ease-in both;
   }
   
   [data-state="open"] {
@@ -248,14 +218,6 @@
   
   [data-state="closed"].slide-out-to-bottom {
     animation: slideOutToBottom 0.2s ease-in both;
-  }
-  
-  [data-state="open"].zoom-in-95 {
-    animation: zoomIn 0.3s ease-out both;
-  }
-  
-  [data-state="closed"].zoom-out-95 {
-    animation: zoomOut 0.2s ease-in both;
   }
 }
 
