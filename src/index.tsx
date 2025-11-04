@@ -3,13 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { QueryProvider } from './providers/QueryProvider';
+import { ThemeProvider } from './components/ThemeProvider';
+import { ToastContainerWrapper } from './components/ToastContainerWrapper';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryProvider>
+      <ThemeProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+        <ToastContainerWrapper />
+      </ThemeProvider>
+    </QueryProvider>
   </React.StrictMode>
 );
 
